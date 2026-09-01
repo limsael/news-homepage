@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/news-homepage-html-css-js-lZjEaKsZkD)
+- [Live site URL](https://limsael.github.io/news-homepage/)
 
 ## My process
 
@@ -62,7 +62,6 @@ function handleImageChange(e) {
 
 ### AI Collaboration
 
-- Used it like a browser to search CSS features
 - VS Code auto completion.
 
 ## Author
