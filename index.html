@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <link rel="stylesheet" href="./styles/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav-img">
+          <img src="./assets/images/logo.svg" alt="Logo News Homepage" />
+        </div>
+
+        <div class="header__nav-backdrop" id="header-nav-backdrop"></div>
+
+        <ul class="header__nav-list" id="header-nav-list">
+          <li><a href="#" class="header__nav-link">Home</a></li>
+          <li><a href="#" class="header__nav-link">New</a></li>
+          <li><a href="#" class="header__nav-link">Popular</a></li>
+          <li><a href="#" class="header__nav-link">Trending</a></li>
+          <li><a href="#" class="header__nav-link">Categories</a></li>
+
+          <div class="header__nav-close" id="header-nav-close">
+            <img
+              src="./assets/images/icon-menu-close.svg"
+              alt="Icon Menu Close"
+            />
+          </div>
+        </ul>
+
+        <div class="header__nav-toggle" id="header-nav-toggle">
+          <img src="./assets/images/icon-menu.svg" alt="Icon Menu Toggle" />
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="main__featured">
+        <div class="main__featured-front">
+          <div>
+            <picture>
+              <source
+                media="(max-width: 376px)"
+                srcset="./assets/images/image-web-3-mobile.jpg"
+              />
+              <img
+                id="main-featured-img"
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="Featured Web 3"
+                class="main__featured-img"
+              />
+            </picture>
+          </div>
+
+          <div class="main__featured-info">
+            <h1 class="main__featured-title">The Bright Future of Web 3.0?</h1>
+            <div>
+              <p class="main__featured-description">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+
+              <button class="main__featured-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="main__new">
+          <h2 class="main__new-title">New</h2>
+
+          <article class="main__new-list-item">
+            <h3>
+              <a href="#" class="main__new-list-title"
+                >Hydrogen VS Electric Cars</a
+              >
+            </h3>
+
+            <p class="main__new-list-description">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </article>
+
+          <article class="main__new-list-item">
+            <h3>
+              <a href="#" class="main__new-list-title"
+                >The Downsides of AI Artistry</a
+              >
+            </h3>
+
+            <p class="main__new-list-description">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+
+          <article class="main__new-list-item">
+            <h3>
+              <a href="#" class="main__new-list-title"
+                >Is VC Funding Drying Up?</a
+              >
+            </h3>
+
+            <p class="main__new-list-description">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </aside>
+      </section>
+
+      <section class="main__next">
+        <div class="main__next-card">
+          <div class="main__next-card-img">
+            <img
+              src="./assets/images/image-retro-pcs.jpg"
+              alt="Image Retro PCs"
+            />
+          </div>
+
+          <div class="main__next-card-text">
+            <h2 class="main__next-card-title">01</h2>
+            <h3>
+              <a href="#" class="main__next-card-subtitle"
+                >Reviving Retro PCs</a
+              >
+            </h3>
+            <p class="main__next-card-description">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="main__next-card">
+          <div class="main__next-card-img">
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              alt="Image Retro PCs"
+            />
+          </div>
+
+          <div class="main__next-card-text">
+            <h2 class="main__next-card-title">02</h2>
+            <h3>
+              <a href="#" class="main__next-card-subtitle"
+                >Top 10 Laptops of 2022</a
+              >
+            </h3>
+            <p class="main__next-card-description">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+
+        <div class="main__next-card">
+          <div class="main__next-card-img">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt="Image Retro PCs"
+            />
+          </div>
+
+          <div class="main__next-card-text">
+            <h2 class="main__next-card-title">03</h2>
+            <h3>
+              <a href="#" class="main__next-card-subtitle"
+                >The Growth of Gaming</a
+              >
+            </h3>
+            <p class="main__next-card-description">
+              How the pandemic has sparked fresh opportunities
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

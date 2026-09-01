@@ -1,0 +1,110 @@
+@use "../abstracts";
+
+@media (width <= 992px) {
+  .main {
+    &__featured {
+      &-title {
+        font-size: 2.75rem;
+      }
+
+      &-description {
+        font-size: 0.875rem;
+      }
+    }
+
+    &__next {
+      grid-template-columns: 1fr;
+      gap: 0.975rem;
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .header {
+    &__nav {
+      position: relative;
+
+      &-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100svw;
+        height: 100svh;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          opacity 0.3s ease,
+          visibility 0.3s ease;
+        z-index: 2;
+
+        &.active {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &-list {
+        position: absolute;
+        top: -100%;
+        right: -50px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        flex-direction: column;
+        gap: 1.975rem;
+        padding: 9.375rem 1.75rem 2.5rem;
+        z-index: 3;
+        translate: 100% 0;
+        visibility: hidden;
+        transition:
+          translate 0.3s ease-in-out,
+          visibility 0.3s ease-in-out;
+
+        &.active {
+          translate: 0 0;
+          // right: -50px;
+          visibility: visible;
+        }
+      }
+
+      &-toggle,
+      &-close {
+        display: block;
+        cursor: pointer;
+      }
+
+      &-close {
+        position: absolute;
+        top: 2.975rem;
+        right: 2.975rem;
+      }
+    }
+  }
+  .main {
+    &__next {
+      grid-template-columns: 1fr;
+      gap: 0.975rem;
+    }
+  }
+}
+
+@media (width <= 600px) {
+  body {
+    padding: 0.975rem;
+  }
+
+  .main {
+    &__featured {
+      grid-template-columns: repeat(1, 1fr);
+
+      &-info {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      &-title {
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use "../abstracts";
+
+body {
+  font-family: abstracts.$font-family;
+  background-color: abstracts.$off-white;
+  padding: 2.5rem;
+  font-size: 0.9375rem;
+}
+
+.header {
+  margin-block-end: 2.5rem;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-toggle,
+    &-close {
+      display: none;
+      cursor: pointer;
+    }
+
+    &-list {
+      list-style: none;
+      display: flex;
+      gap: 1.975rem;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: abstracts.$dark-grayish-blue;
+
+      &:hover {
+        color: abstracts.$soft-orange;
+      }
+    }
+  }
+}
